@@ -1,4 +1,16 @@
 Jest
   - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
   - It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more!
-_____________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+Wherever passibole, I really recommended you avoid writing for loops in the kind of very classic syntax:
+    for(var i= 0; i<str.length; i++) {} //this is classic syntax
+because you may make a typo..
+________________________________________________________________________________________________________
+The split() method splits a string into an array of substrings.
+________________________________________________________________________________________________________
+The join() method returns an array as a string. The join() method does not change the original array.
+Any separator can be specified.
+________________________________________________________________________________________________________
+reduce() method in JavaScript is used to reduce the array to a single value and executes a provided
+function for each value of the array (from left-to-right) and the return value of the function is
+stored in an accumulator.
