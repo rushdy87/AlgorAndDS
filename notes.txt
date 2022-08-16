@@ -18,3 +18,12 @@ ________________________________________________________________________________
 The every() method tests whether all elements in the array pass the test implemented by the provided 
 function. It returns a Boolean value.
 ________________________________________________________________________________________________________
+The toString() method returns a string representing the object.
+________________________________________________________________________________________________________
+The parseInt() function parses a string argument and returns an integer of the specified radix.
+parseInt(string)
+parseInt(string, radix)
+________________________________________________________________________________________________________
+The Math.sign() function returns either a positive or negative +/- 1, indicating the sign of a number 
+passed into the argument. If the number passed into Math.sign() is 0, it will return a +/- 0.
+Note that if the number is positive, an explicit (+) will not be returned.
