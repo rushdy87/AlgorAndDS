@@ -78,3 +78,20 @@ ________________________________________________________________________________
 The Object.keys() method returns an array of a given object's own enumerable property names, 
 iterated in the same order that a normal loop would.
 ________________________________________________________________________________________________________
+The Array() constructor is used to create Array objects.
+    new Array(element0, element1, /* … ,*/ elementN)
+    new Array(arrayLength)
+Arrays can be created using a constructor with a single number parameter. An array with its length property 
+set to that number and the array elements are empty slots.
+________________________________________________________________________________________________________
+The fill() method changes all elements in an array to a static value, from a start index (default 0) to 
+an end index (default array.length). It returns the modified array.
+    const arr = new Array(5).fill('#') // equivalent to arr=['#','#','#','#','#']
+________________________________________________________________________________________________________
+Recursion:
+  - Recursion is when a function calls itself until someone stops it.
+  - It can be used instead of a loop.
+  - If no one stops it, it'll recurse forever and crash your program.
+  - A base case is a condition that stops the recursion. Don't forget to add them!
+  - Loops use extra state variables for tracking and counting, while recursion only uses the provided parameters.
+________________________________________________________________________________________________________
