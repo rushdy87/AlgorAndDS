@@ -95,3 +95,7 @@ Recursion:
   - A base case is a condition that stops the recursion. Don't forget to add them!
   - Loops use extra state variables for tracking and counting, while recursion only uses the provided parameters.
 ________________________________________________________________________________________________________
+The repeat() method constructs and returns a new string which contains the specified number of copies of 
+the string on which it was called, concatenated together.
+'#'.repeat(3) // ==> '###'
+________________________________________________________________________________________________________
