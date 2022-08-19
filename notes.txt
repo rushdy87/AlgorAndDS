@@ -107,3 +107,71 @@ ________________________________________________________________________________
 The match() method retrieves the result of matching a string against a regular expression.
 match(regexp).
 ________________________________________________________________________________________________________
+Runtime Complexity
+  - Describes the performance of an algorithm
+  - How much more processing power/time is required to run your algorithm if we double the inputs?
+________________________________________________________________________________________________________
+Big 'O' Notation
+  - Big O notation describes the complexity of your code using algebraic terms.
+  - What is efficiency of your algorithm?
+________________________________________________________________________________________________________
+Common Runtime Complexity:
+1- Constant Time:
+  - No matter how many elements we're working with, the algorithm/operation/whatever will always take the same amount of time.
+  - Represented by O(1).
+  const sum = (a, b) => a+b;
+
+2- Logarithmic Time:
+  - You have this if doubling the number of elements you are iterating over doesn't double the amount of work.
+    Always assume that searching operations are log(n).
+  - Represented by O(log(n)).
+  while (x>0) {
+    x = x/2;
+  }
+
+3- Linear Runtime:
+  - Iterating through all elements in a collection of data.  If you see a for loop spanning from '0' to 'array.length', 
+    you probably have 'n', or linear runtime.
+  - Represented by O(n).
+  for (i=0; i<n; i++) {
+    sum += arr[i];
+  }
+  
+4- Quasilinear Runtime (or, Linearithmic Runtime):
+  - You have this if doubling the number of elements you are iterating over doesn't double the amount of work. Always assume 
+    that any sorting operation is n*log(n).
+  - Represented as O(n*log(n)).
+
+5- Quadratic Runtime:
+  - Every element in a collection has to be compared to every other element. 'The handshake problem'.
+  - Expressed as O(n^2).
+  for (i=0; i<row; i++) {
+    for (j=1; j<col; j++) {
+      console.log (arr[i][j]);
+    }
+  }
+
+6- Exponential Runtime:
+  - If you add a *single* element to a collection, the processing power required doubles.
+  - Represented as O(2^n).
+________________________________________________________________________________________________________
+Tips around identifying Runtime Complexity:
+- Iterating with a simple for loop through a single collection?
+  Probably O(n).
+- Iterating through half a collection?
+  Still O(n).  There are no constants in runtime.
+- Iterating through two *different* collections with separate for loops?
+  O(n + m).
+- Two nested for loops iterating over the same collection?
+  O(n^2).
+- Two nested for loops iterating over different collections?
+  O(n*m).
+- Sorting?
+  O(n*log(n)).
+- Searching a sorted array?
+  O(log(n))
+________________________________________________________________________________________________________
+Space Complexity:
+  - Space Complexity is a thing too.
+  - How much more memory is required by doubling the problem set?
+________________________________________________________________________________________________________
