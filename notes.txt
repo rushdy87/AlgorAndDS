@@ -99,3 +99,11 @@ The repeat() method constructs and returns a new string which contains the speci
 the string on which it was called, concatenated together.
 '#'.repeat(3) // ==> '###'
 ________________________________________________________________________________________________________
+The includes() method determines whether an array (or a string) includes a certain value among its entries, 
+returning true or false as appropriate.
+[1, 2, 3].includes(2) // return true;
+'abcdef'.includes('g') // return false;
+________________________________________________________________________________________________________
+The match() method retrieves the result of matching a string against a regular expression.
+match(regexp).
+________________________________________________________________________________________________________
