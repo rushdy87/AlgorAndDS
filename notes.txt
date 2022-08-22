@@ -181,3 +181,9 @@ Memoization:
   - memoization is an optimization technique.
   - see this article: https://www.freecodecamp.org/news/memoization-in-javascript-and-react/
 ________________________________________________________________________________________________________
+Private class features
+  Class fields are public by default, but private class members can be created by using a hash # prefix.
+The privacy encapsulation of these class features is enforced by JavaScript itself.
+  Private members are not native to the language before this syntax existed. In prototypical inheritance,its 
+behavior may be emulated with WeakMap objects or closures, but they can't compare to the # syntax in terms of ergonomics.
+________________________________________________________________________________________________________

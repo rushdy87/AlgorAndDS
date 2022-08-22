@@ -1,0 +1,9 @@
+Data Structure
+  - Ways of organizing information with optimal 'runtime complexity' for adding, editting, or removing records.
+  - Javascript natively implements several data structures. You will still be asked about 'inferior' data structures.
+______________________________________________________________________________________________________________________
+The Queue:
+  - A Queue is a linear structure which follows a particular order in which the operations are performed.
+  - The order is First In First Out (FIFO).
+      $element ----Enqueue(add)---> [queue] ----Dequeue(remove)---> $element
+______________________________________________________________________________________________________________________
