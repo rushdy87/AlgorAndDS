@@ -5,5 +5,10 @@ ________________________________________________________________________________
 The Queue:
   - A Queue is a linear structure which follows a particular order in which the operations are performed.
   - The order is First In First Out (FIFO).
-      $element ----Enqueue(add)---> [queue] ----Dequeue(remove)---> $element
+      $element1, $element2 ----Enqueue(add)---> [queue] ----Dequeue(remove)---> $element1, $element2
+______________________________________________________________________________________________________________________
+The Stack:
+  - Stack is a linear data structure in which addition or removal of element follows a particular order
+    LIFO(Last in First Out) AND FILO(First in Last Out).
+      $element1, $element2 ----Enqueue(add)---> [queue] ----Dequeue(remove)---> $element2, $element1
 ______________________________________________________________________________________________________________________
