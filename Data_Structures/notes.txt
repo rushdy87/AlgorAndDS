@@ -12,3 +12,25 @@ The Stack:
     LIFO(Last in First Out) AND FILO(First in Last Out).
       $element1, $element2 ----Enqueue(add)---> [queue] ----Dequeue(remove)---> $element2, $element1
 ______________________________________________________________________________________________________________________
+Linked List:
+  - A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.
+  - The elements in a linked list are linked using pointers.
+  - Node: is the element of Linked List.
+  - Head: is the first Node in the Linked List.
+  - Tail: is the last Node in the Linked List.
+  - The Node contain two parts: Data, and The reference to Next Node.
+  - The reference part in the Tail refere to Null.
+______________________________________________________________________________________________________________________
+Generators:
+  - The function* declaration (function keyword followed by an asterisk) defines a generator function, 
+  which returns a Generator object.
+  function* generator(i) {
+    yield i;
+    yield i + 10;
+  }
+  const gen = generator(10);
+  console.log(gen.next().value);
+  // expected output: 10
+  console.log(gen.next().value);
+  // expected output: 20
+______________________________________________________________________________________________________________________
