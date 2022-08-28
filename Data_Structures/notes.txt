@@ -34,3 +34,15 @@ Generators:
   console.log(gen.next().value);
   // expected output: 20
 ______________________________________________________________________________________________________________________
+Tree:
+  - A tree is non-linear and a hierarchical data structure consisting of a collection of nodes such that each node of 
+    the tree stores a value and a list of references to other nodes (the “children”).
+  - Node: is the element of the Tree.
+  - Child: is any node that is directly underneath a given node.
+  - every Node has a data and a reference to children.
+  - Sibling: Children of the same parent node are called siblings.
+  - trees can be traversed in different ways.
+  - There are two big ways to iterating through a tree:
+    * Breadth-First traversal.
+    * Depth-First traversal.
+______________________________________________________________________________________________________________________
