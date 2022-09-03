@@ -187,3 +187,6 @@ The privacy encapsulation of these class features is enforced by JavaScript itse
   Private members are not native to the language before this syntax existed. In prototypical inheritance,its 
 behavior may be emulated with WeakMap objects or closures, but they can't compare to the # syntax in terms of ergonomics.
 ________________________________________________________________________________________________________
+delete
+The JavaScript delete operator removes a property from an object; if no more references to the same property are held, it is eventually released automatically.
+________________________________________________________________________________________________________
