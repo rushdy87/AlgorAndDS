@@ -1,0 +1,13 @@
+how would you design Twitter?
+High level notes about this kind of qustion:
+  - There is no right answer.
+  - Every interviewer will expect a different answer.
+  - Focus is usually on the data model.
+  - Don't mention specific technologies.
+  - Draw stuff.
+  - Talk.
+one possible strategy:
+1- Identify Two Core Features.
+2- Possible Implementation.
+3- Identify and Address Difficulties.
+4- Solutions for scaling.
