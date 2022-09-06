@@ -31,9 +31,29 @@ function selectionSort(arr) {
   return arr;
 }
 
-function mergeSort(arr) {}
+function mergeSort(arr) {
+  if (arr.length === 1) {
+    return arr;
+  }
 
-function merge(left, right) {}
+  const center = Math.floor(arr.length / 2);
+  const left = arr.slice(0, center);
+  const right = arr.slice(center);
+
+  return merge(mergeSort(left), mergeSort(right));
+}
+
+function merge(left, right) {
+  const results = [];
+  while (left.length && right.length) {
+    if (left[0] < right[0]) {
+      results.push(left.shift());
+    } else {
+      results.push(right.shift());
+    }
+  }
+  return [...results, ...left, ...right];
+}
 
 module.exports = { bubbleSort, selectionSort, mergeSort, merge };
 
@@ -51,4 +71,30 @@ module.exports = { bubbleSort, selectionSort, mergeSort, merge };
     }
     return arr;
 }
+ */
+
+/** The Merge Sort algorithm:
+ * The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. 
+ * In this algorithm, the array is initially divided into two equal halves and then they are combined in a 
+ * sorted manner.
+ * Think of it as a recursive algorithm continuously splits the array in half until it cannot be further divided.
+ * The Merage Pseudocode (for merge(left, right)):
+    1- Create 'results' array.
+    2- While there are still elements in both arrays.
+    3-    If the first element the left half is less than first in right half
+    4-      'shift' the element from left into a 'result' arr.
+    5-    else
+    6-      'shift' the element from right into a 'result' arr.
+    7- Take everything from the array that still has stuff in it and put it in results.
+* Splitter Pseudocode:
+    1- If the incoming array doesn't have length 1.
+    2- Divide the incoming array into two halves.
+    3- Call the 'splitter' again with each half.
+    4- Call the 'merger' with each half.
+
+* example: mergeSort([97, 0]):
+  first call: mergeSort([97, 0]);
+  second call: mergeSort([97]), third call: mergeSort([0]);
+  Both 'mergeSort' calls return the array [97], [0]; // line 36
+  Pass both halves to 'merge' function
  */
